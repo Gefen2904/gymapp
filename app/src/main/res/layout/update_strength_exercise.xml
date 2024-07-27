@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/update_exercise_strength_layout"
+    android:background="@drawable/background_for_app">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="40dp"
+        android:elevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:textColor="@color/black"
+        android:id="@+id/update_exercise_name_strength"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/update_exercise_num_of_sets_strength_layout"
+        android:hint="enter number of sets"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/update_exercise_name_strength">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_exercise_num_of_sets_strength"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:id="@+id/update_exercise_num_of_reps_layout"
+        android:hint="enter number of reps"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/update_exercise_num_of_sets_strength_layout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_exercise_num_of_reps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:hint="enter number of weight"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/black"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:gravity="center"
+        android:layout_below="@+id/update_exercise_num_of_reps_layout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_exercise_num_of_weight_strength"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/update_exercise_save_btn_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/save_symbol"
+        android:layout_gravity="bottom"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

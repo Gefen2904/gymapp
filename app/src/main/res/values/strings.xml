@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Personal Trainer</string>
+
+    <string name="about">
+        The purpose of this app is to be your personal trainer.
+        At the top of the home page there is a menu through this menu you can preform actions such as creating a new workout, viewing your pictures and more.
+        After building a workout you will be able to see the information of every exercise by clicking on it and update that information by long clicking on the exercise.
+        In this app you have two types of exercises a cardio exercise and a strength exercise.
+        The background of the cardio exercise is the color purple and the background of the strength exercise is the color light blue.
+        After clicking on the view pictures button through the menu you will see your pictures you will also be able to take a new picture and upload a picture.
+        You can also play music through the menu and also every workout you build is saved and you will be able to change your workout to an old one by clicking on the Change to an old workout button that is in the menu.
+        While building a new workout you will need to choose the days you want to workout in and at what time, in those days you will get an notification 30 minutes before the time you selected to remind you about the workout.
+        Hope you enjoy the app.
+    </string>
+
+</resources>

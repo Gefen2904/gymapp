@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pics_list_layout"
+    android:background="@drawable/background_for_app"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pics_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/take_pic_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="160dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/take_pic_symbol" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload_pic_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="90dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/gallery_symbol" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pics_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/back_symbol" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

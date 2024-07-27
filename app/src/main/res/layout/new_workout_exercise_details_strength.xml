@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/new_exercise_strength_layout"
+    android:background="@drawable/background_for_app">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="40dp"
+        android:elevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="100dp"
+                android:text="Strength exercise"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/name_tv"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="110dp"
+                android:hint="enter the name of the exercise"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/new_exercise_name_strength_layout"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:layout_below="@id/name_tv"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_exercise_name_strength"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:inputType="text"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:id="@+id/new_exercise_num_of_sets_strength_layout"
+                android:hint="enter number of sets"
+                android:textColorHint="@color/black"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/new_exercise_name_strength_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_exercise_num_of_sets_strength"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:inputType="number"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:id="@+id/new_exercise_num_of_reps_layout"
+                android:hint="enter number of reps"
+                android:textSize="25sp"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_centerHorizontal="true"
+
+                android:layout_below="@+id/new_exercise_num_of_sets_strength_layout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_exercise_num_of_reps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:inputType="number"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="110dp"
+                android:id="@+id/new_exercise_num_of_weight_layout"
+                android:hint="enter number of weight"
+                android:textSize="25sp"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_below="@+id/new_exercise_num_of_reps_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_exercise_num_of_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/new_exercise_save_btn_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/save_symbol"
+        android:layout_gravity="bottom"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

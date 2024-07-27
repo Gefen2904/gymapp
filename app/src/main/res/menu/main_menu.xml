@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+    <item android:id="@+id/build_new_workout"
+        android:title="Build new workout"
+        android:icon="@drawable/build_workout_symbol" />
+
+    <item android:id="@+id/see_pictures"
+        android:title="View pictures"
+        android:icon="@drawable/view_pictures_symbol"/>
+
+        <item android:id="@+id/load_old_workout"
+        android:title="Change your workout"
+        android:icon="@drawable/ic_baseline_swap_horiz_24"/>
+
+        <item android:id="@+id/change_days"
+        android:title="Change your workout days"
+        android:icon="@drawable/time_symbol"/>
+
+
+    </group>
+
+    <item android:title="Sub menu">
+        <menu>
+            <item android:id="@+id/music"
+                android:title="Play music"
+                android:icon="@drawable/music_symbol" />
+
+    <item android:id="@+id/about"
+        android:title="About the app"
+        android:icon="@drawable/about_symbol" />
+
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/update_exercise_cardio_layout"
+    android:background="@drawable/background_for_app">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="40dp"
+        android:elevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:id="@+id/update_exercise_name_cardio"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:id="@+id/update_exercise_num_of_sets_cardio_layout"
+        android:inputType="number"
+        android:hint="enter number of sets"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/update_exercise_name_cardio"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_exercise_num_of_sets_cardio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:inputType="number"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/update_exercise_num_of_time_layout"
+        android:hint="enter time for each set"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_below="@+id/update_exercise_num_of_sets_cardio_layout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_exercise_num_of_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/update_exercise_save_btn_cardio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textColorHint="@color/black"
+        android:src="@drawable/save_symbol"
+        android:layout_gravity="bottom"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

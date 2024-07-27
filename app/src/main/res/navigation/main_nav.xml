@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/main_fragment">
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.example.myfinalproject.MainFragment"
+        android:label="Main"
+        tools:layout="@layout/main_fragment">
+
+        <action
+            android:id="@+id/action_main_fragment_to_n_w_e_l_fragment"
+            app:destination="@id/n_w_e_l_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_s_p_e_d_s_fragment"
+            app:destination="@id/s_p_e_d_s_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_u_e_d_c_fragment"
+            app:destination="@id/u_e_d_c_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_u_e_d_s_fragment"
+            app:destination="@id/u_e_d_s_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_pics_fragment"
+            app:destination="@id/pics_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_s_p_e_d_c_fragment"
+            app:destination="@id/s_p_e_d_c_fragment" />
+        <action
+            android:id="@+id/action_main_fragment_to_workouts_history_fragment"
+            app:destination="@id/workouts_history_fragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/workouts_history_fragment"
+        android:name="com.example.myfinalproject.WorkoutsHistoryFragment"
+        android:label="Workouts_History_Fragment"
+        tools:layout="@layout/workouts_history">
+        <action
+            android:id="@+id/action_workouts_history_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/n_w_e_d_c_fragment"
+        android:name="com.example.myfinalproject.NewWorkoutExerciseCardioFragment"
+        android:label="New_Workout_Exercise_Details_Cardio"
+        tools:layout="@layout/new_workout_exercise_details_cardio"
+        >
+        <action
+            android:id="@+id/action_n_w_e_d_c_fragment_to_n_w_e_l_fragment"
+            app:destination="@id/n_w_e_l_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/n_w_e_d_s_fragment"
+        android:name="com.example.myfinalproject.NewWorkoutExerciseStrengthFragment"
+        android:label="New_Workout_Exercise_Details_Strength"
+        tools:layout="@layout/new_workout_exercise_details_strength"
+        >
+        <action
+            android:id="@+id/action_n_w_e_d_s_fragment_to_n_w_e_l_fragment"
+            app:destination="@id/n_w_e_l_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/u_e_d_s_fragment"
+        android:name="com.example.myfinalproject.UpdateStrengthExercise"
+        android:label="Update_Exercise_Details_Strength"
+        tools:layout="@layout/update_strength_exercise"
+        >
+        <action
+            android:id="@+id/action_u_e_d_s_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/u_e_d_c_fragment"
+        android:name="com.example.myfinalproject.UpdateCardioExercise"
+        android:label="Update_Exercise_Details_Cardio"
+        tools:layout="@layout/update_cardio_exercise"
+        >
+        <action
+            android:id="@+id/action_u_e_d_c_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/n_w_e_l_fragment"
+        android:name="com.example.myfinalproject.NewWorkoutExerciseListFragment"
+        android:label="New_Workout_Exercise_List"
+        tools:layout="@layout/new_workout_exercise_list">
+
+        <action
+            android:id="@+id/action_n_w_e_l_fragment_to_n_w_e_d_s_fragment"
+            app:destination="@id/n_w_e_d_s_fragment" />
+        <action
+            android:id="@+id/action_n_w_e_l_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+        <action
+            android:id="@+id/action_n_w_e_l_fragment_to_n_w_e_d_c_fragment"
+            app:destination="@id/n_w_e_d_c_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/s_p_e_d_s_fragment"
+        android:name="com.example.myfinalproject.ShowProgressStrengthExerciseDetailsFragment"
+        android:label="Show_Progress_Exercise_Details_Strength"
+        tools:layout="@layout/show_progress_exercise_details_strength"
+        >
+        <action
+            android:id="@+id/action_s_p_e_d_s_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/s_p_e_d_c_fragment"
+        android:name="com.example.myfinalproject.ShowProgressCardioExerciseDetailsFragment"
+        android:label="Show_Progress_Exercise_Details_Cardio"
+        tools:layout="@layout/show_progress_exercise_details_cardio"
+        >
+        <action
+            android:id="@+id/action_s_p_e_d_c_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pics_fragment"
+        android:name="com.example.myfinalproject.PicsFragment"
+        android:label="Pics"
+        tools:layout="@layout/pics">
+        <action
+            android:id="@+id/action_pics_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+
+</navigation>
